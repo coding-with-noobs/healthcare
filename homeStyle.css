@@ -1,0 +1,52 @@
+header{
+}
+div.ui.menu{
+    padding: 7px 0 7px 0;
+    justify-content: space-around;
+}
+
+div.ui.menu div.item{
+    justify-content: center;
+}
+
+.ui.menu .item::before{
+    width: 0;
+}
+
+a{
+    color: initial;
+}
+
+@media only screen and (min-width: 700px) {
+    div.ui.menu{
+        justify-content: space-around;
+    }
+
+    #top-nav{
+        display: flex;
+    }
+    
+    #side-nav,#side-nav-con{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    div.ui.menu{
+        justify-content: left;
+    }
+    #top-nav{
+        display: none;
+    }
+    
+    #side-nav,#side-nav-con{
+        display: flex;
+    }
+}
+
+div.ui.basic.icon.menu{
+    margin: 0;
+}
+body.pushable {
+    background-color: transparent !important;
+}
